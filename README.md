@@ -12,11 +12,6 @@ A métrica do trabalho é a **contagem de blocos lógicos** lidos, medida
 pela camada `blockio` fornecida pelo professor. A comparação entre os
 caminhos de acesso das duas partes está no relatório (`docs/tp2_relatorio.pdf`).
 
-**Aluno:** _(preencher com nome completo e matrícula)_
-**Professor:** Altigran Soares da Silva
-**Data de entrega:** 10/10/2026
-
----
 
 ## 1. Estrutura do repositório
 
@@ -49,14 +44,12 @@ tp2/
 | `bin/seek2`         | 2     | Busca por título via B+Tree secundária                |
 | `bin/seekrange`     | 2     | Busca por intervalo via B+Tree primária + folhas      |
 
----
 
 ## 2. Requisitos
 
 - **Compilar localmente:** `g++` (C++17) e `make` em Linux/Ubuntu.
 - **Executar via Docker:** Docker e `docker-compose` (opcional).
 
----
 
 ## 3. Preparar o CSV de entrada
 
@@ -345,31 +338,9 @@ docker run --rm -v "$PWD/data:/data" tp2-8k ./bin/seek1   5
 
 ---
 
-## 10. Entrega
 
-O trabalho é individual e entregue por repositório GitHub privado,
-criado a partir do template `tp2-2026-02-template` na organização
-`bd1-icomp-ufam`.
 
-- Repositório privado com o professor `altigran` como colaborador.
-- Versão final marcada com a tag **`v1.0`**:
 
-  ```bash
-  git tag v1.0
-  git push origin v1.0
-  git ls-remote --tags origin    # confirme que aparece no remoto
-  ```
-
----
-
-## 11. Declaração de uso de IA
-
-O uso de ferramentas de IA (Claude, Anthropic) está declarado na
-Seção 7.7 do relatório, com detalhamento das partes em que foi usado e
-do que foi modificado após a geração. O código entregue foi compilado e
-executado localmente; os números do relatório provêm dessas execuções.
-
----
 
 ## 12. Referências
 
